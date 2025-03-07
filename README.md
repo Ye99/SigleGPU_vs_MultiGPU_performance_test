@@ -95,4 +95,33 @@ With a realistic workload, the benefits of Accelerate are clear - nearly higher 
 
 ## Requirements
 
-See requirements.txt for dependencies:
+See `requirements.txt` file for the complete list of dependencies.
+
+## Cursor Rules
+
+This project includes Cursor rules for consistent code formatting and best practices. The rules are available in the `.cursor/rules` directory via a symbolic link to the CursorRules submodule.
+
+### Available Rules
+
+- `python.mdc`: Python coding rules for consistent Python code formatting and best practices
+- `frontend.mdc`: Frontend development rules for web development
+
+### Setting Up the Rules
+
+The rules come from the [CursorRules](https://github.com/Ye99/CursorRules) repository, which is included as a Git submodule. To initialize the submodule:
+
+1. **If you're cloning the repository for the first time:**
+   ```bash
+   git clone --recurse-submodules https://github.com/yourusername/accelerate.git
+   ```
+
+2. **If you've already cloned the repository without the submodule:**
+   ```bash
+   git submodule init
+   git submodule update
+   ```
+
+3. **To update the submodule to the latest version:**
+   ```bash
+   git submodule update --remote
+   ```
